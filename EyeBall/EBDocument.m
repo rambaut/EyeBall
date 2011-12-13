@@ -3,10 +3,11 @@
 //  EyeBall
 //
 //  Created by Andrew Rambaut on 13/12/2011.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2011 Andrew Rambaut. All rights reserved.
 //
 
 #import "EBDocument.h"
+#import "EBAlignmentViewController.h"
 
 @implementation EBDocument
 
@@ -14,8 +15,13 @@
 {
     self = [super init];
     if (self) {
-        // Add your subclass-specific initialization here.
-        // If an error occurs here, return nil.
+        viewControllers = [[NSMutableArray alloc] init];
+        
+        ManagingViewController *vc;
+        
+        vc = [[EBAlignmentViewController alloc] init];
+        [vc setManagedObjectContext:[self managedObjectContext]];
+        [viewControllers addObject:vc];
     }
     return self;
 }
@@ -30,7 +36,23 @@
 - (void)windowControllerDidLoadNib:(NSWindowController *)aController
 {
     [super windowControllerDidLoadNib:aController];
+
     // Add any code here that needs to be executed once the windowController has loaded the document's window.
+    [self displayViewController:[viewControllers objectAtIndex:0]];    
+}
+
+- (void)displayViewController:(ManagingViewController *)vc
+{
+    // try to end editing
+    NSWindow *w = [box window];
+    BOOL ended = [w makeFirstResponder: w];
+    if (!ended) {
+        NSBeep();
+        return;
+    }
+    
+    NSView *v = [vc view];
+    [box setContentView: v];
 }
 
 + (BOOL)autosavesInPlace

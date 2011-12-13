@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D494AB614975EEE007C08CD /* EBAlignmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D494AB514975EEE007C08CD /* EBAlignmentViewController.m */; };
 		4DA72B1A1497566F005F7A67 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA72B191497566F005F7A67 /* Cocoa.framework */; };
 		4DA72B241497566F005F7A67 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4DA72B221497566F005F7A67 /* InfoPlist.strings */; };
 		4DA72B261497566F005F7A67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA72B251497566F005F7A67 /* main.m */; };
@@ -28,6 +29,12 @@
 		4DA72B6214975670005F7A67 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 4DA72B6114975670005F7A67 /* main.c */; };
 		4DA72B6414975670005F7A67 /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA72B6314975670005F7A67 /* GetMetadataForFile.m */; };
 		4DA72B6714975670005F7A67 /* MySpotlightImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA72B6614975670005F7A67 /* MySpotlightImporter.m */; };
+		4DA72B7A14975764005F7A67 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DA72B7714975764005F7A67 /* Preferences.xib */; };
+		4DA72B80149757DE005F7A67 /* PreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA72B7E149757DE005F7A67 /* PreferenceController.m */; };
+		4DA72B83149757F4005F7A67 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA72B82149757F4005F7A67 /* AppController.m */; };
+		4DA72B861497588F005F7A67 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4DA72B841497588F005F7A67 /* Localizable.strings */; };
+		4DA72B8914975A10005F7A67 /* AlignmentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DA72B8714975A10005F7A67 /* AlignmentView.xib */; };
+		4DAB32B514975E310084FB3E /* ManagingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAB32B314975E310084FB3E /* ManagingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,40 +55,51 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D494AB414975EEE007C08CD /* EBAlignmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBAlignmentViewController.h; sourceTree = "<group>"; };
+		4D494AB514975EEE007C08CD /* EBAlignmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBAlignmentViewController.m; sourceTree = "<group>"; };
 		4DA72B151497566F005F7A67 /* EyeBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EyeBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DA72B191497566F005F7A67 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		4DA72B1C1497566F005F7A67 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		4DA72B1D1497566F005F7A67 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		4DA72B1E1497566F005F7A67 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		4DA72B211497566F005F7A67 /* EyeBall-Info.plist */ = {isa = PBXFileReference; path = "EyeBall-Info.plist"; sourceTree = "<group>"; };
+		4DA72B211497566F005F7A67 /* EyeBall-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EyeBall-Info.plist"; sourceTree = "<group>"; };
 		4DA72B231497566F005F7A67 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4DA72B251497566F005F7A67 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4DA72B271497566F005F7A67 /* EyeBall-Prefix.pch */ = {isa = PBXFileReference; path = "EyeBall-Prefix.pch"; sourceTree = "<group>"; };
+		4DA72B271497566F005F7A67 /* EyeBall-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EyeBall-Prefix.pch"; sourceTree = "<group>"; };
 		4DA72B291497566F005F7A67 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		4DA72B2B1497566F005F7A67 /* EBDocument.h */ = {isa = PBXFileReference; path = EBDocument.h; sourceTree = "<group>"; };
+		4DA72B2B1497566F005F7A67 /* EBDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBDocument.h; sourceTree = "<group>"; };
 		4DA72B2C1497566F005F7A67 /* EBDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBDocument.m; sourceTree = "<group>"; };
 		4DA72B2F1497566F005F7A67 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/EBDocument.xib; sourceTree = "<group>"; };
 		4DA72B321497566F005F7A67 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		4DA72B351497566F005F7A67 /* EBDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EBDocument.xcdatamodel; sourceTree = "<group>"; };
 		4DA72B3C1497566F005F7A67 /* EyeBallTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EyeBallTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DA72B3D1497566F005F7A67 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		4DA72B441497566F005F7A67 /* EyeBallTests-Info.plist */ = {isa = PBXFileReference; path = "EyeBallTests-Info.plist"; sourceTree = "<group>"; };
+		4DA72B441497566F005F7A67 /* EyeBallTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EyeBallTests-Info.plist"; sourceTree = "<group>"; };
 		4DA72B4614975670005F7A67 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4DA72B4814975670005F7A67 /* EyeBallTests.h */ = {isa = PBXFileReference; path = EyeBallTests.h; sourceTree = "<group>"; };
+		4DA72B4814975670005F7A67 /* EyeBallTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EyeBallTests.h; sourceTree = "<group>"; };
 		4DA72B4914975670005F7A67 /* EyeBallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EyeBallTests.m; sourceTree = "<group>"; };
 		4DA72B4F14975670005F7A67 /* EyeBallImporter.mdimporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EyeBallImporter.mdimporter; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DA72B5314975670005F7A67 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		4DA72B5514975670005F7A67 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		4DA72B5714975670005F7A67 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		4DA72B5914975670005F7A67 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		4DA72B5D14975670005F7A67 /* EyeBallImporter-Info.plist */ = {isa = PBXFileReference; path = "EyeBallImporter-Info.plist"; sourceTree = "<group>"; };
+		4DA72B5D14975670005F7A67 /* EyeBallImporter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EyeBallImporter-Info.plist"; sourceTree = "<group>"; };
 		4DA72B5F14975670005F7A67 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4DA72B6114975670005F7A67 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		4DA72B6314975670005F7A67 /* GetMetadataForFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetMetadataForFile.m; sourceTree = "<group>"; };
-		4DA72B6514975670005F7A67 /* MySpotlightImporter.h */ = {isa = PBXFileReference; path = MySpotlightImporter.h; sourceTree = "<group>"; };
+		4DA72B6514975670005F7A67 /* MySpotlightImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySpotlightImporter.h; sourceTree = "<group>"; };
 		4DA72B6614975670005F7A67 /* MySpotlightImporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySpotlightImporter.m; sourceTree = "<group>"; };
-		4DA72B6814975670005F7A67 /* Importer Read Me.txt */ = {isa = PBXFileReference; path = "Importer Read Me.txt"; sourceTree = "<group>"; };
-		4DA72B6914975670005F7A67 /* EyeBallImporter-Prefix.pch */ = {isa = PBXFileReference; path = "EyeBallImporter-Prefix.pch"; sourceTree = "<group>"; };
+		4DA72B6814975670005F7A67 /* Importer Read Me.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Importer Read Me.txt"; sourceTree = "<group>"; };
+		4DA72B6914975670005F7A67 /* EyeBallImporter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EyeBallImporter-Prefix.pch"; sourceTree = "<group>"; };
+		4DA72B7814975764005F7A67 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Preferences.xib; sourceTree = "<group>"; };
+		4DA72B7D149757DE005F7A67 /* PreferenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceController.h; sourceTree = "<group>"; };
+		4DA72B7E149757DE005F7A67 /* PreferenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceController.m; sourceTree = "<group>"; };
+		4DA72B81149757F4005F7A67 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		4DA72B82149757F4005F7A67 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		4DA72B851497588F005F7A67 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4DA72B8814975A10005F7A67 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AlignmentView.xib; sourceTree = "<group>"; };
+		4DAB32B214975E310084FB3E /* ManagingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagingViewController.h; sourceTree = "<group>"; };
+		4DAB32B314975E310084FB3E /* ManagingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,9 +182,19 @@
 		4DA72B1F1497566F005F7A67 /* EyeBall */ = {
 			isa = PBXGroup;
 			children = (
+				4DA72B81149757F4005F7A67 /* AppController.h */,
+				4DA72B82149757F4005F7A67 /* AppController.m */,
 				4DA72B2B1497566F005F7A67 /* EBDocument.h */,
 				4DA72B2C1497566F005F7A67 /* EBDocument.m */,
 				4DA72B2E1497566F005F7A67 /* EBDocument.xib */,
+				4D494AB414975EEE007C08CD /* EBAlignmentViewController.h */,
+				4D494AB514975EEE007C08CD /* EBAlignmentViewController.m */,
+				4DA72B8714975A10005F7A67 /* AlignmentView.xib */,
+				4DAB32B214975E310084FB3E /* ManagingViewController.h */,
+				4DAB32B314975E310084FB3E /* ManagingViewController.m */,
+				4DA72B7D149757DE005F7A67 /* PreferenceController.h */,
+				4DA72B7E149757DE005F7A67 /* PreferenceController.m */,
+				4DA72B7714975764005F7A67 /* Preferences.xib */,
 				4DA72B311497566F005F7A67 /* MainMenu.xib */,
 				4DA72B341497566F005F7A67 /* EBDocument.xcdatamodeld */,
 				4DA72B201497566F005F7A67 /* Supporting Files */,
@@ -178,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				4DA72B211497566F005F7A67 /* EyeBall-Info.plist */,
+				4DA72B841497588F005F7A67 /* Localizable.strings */,
 				4DA72B221497566F005F7A67 /* InfoPlist.strings */,
 				4DA72B251497566F005F7A67 /* main.m */,
 				4DA72B271497566F005F7A67 /* EyeBall-Prefix.pch */,
@@ -322,6 +351,9 @@
 				4DA72B301497566F005F7A67 /* EBDocument.xib in Resources */,
 				4DA72B331497566F005F7A67 /* MainMenu.xib in Resources */,
 				4DA72B5214975670005F7A67 /* EyeBallImporter.mdimporter in Resources */,
+				4DA72B7A14975764005F7A67 /* Preferences.xib in Resources */,
+				4DA72B861497588F005F7A67 /* Localizable.strings in Resources */,
+				4DA72B8914975A10005F7A67 /* AlignmentView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +399,10 @@
 				4DA72B261497566F005F7A67 /* main.m in Sources */,
 				4DA72B2D1497566F005F7A67 /* EBDocument.m in Sources */,
 				4DA72B361497566F005F7A67 /* EBDocument.xcdatamodeld in Sources */,
+				4DA72B80149757DE005F7A67 /* PreferenceController.m in Sources */,
+				4DA72B83149757F4005F7A67 /* AppController.m in Sources */,
+				4DAB32B514975E310084FB3E /* ManagingViewController.m in Sources */,
+				4D494AB614975EEE007C08CD /* EBAlignmentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +486,30 @@
 				4DA72B5F14975670005F7A67 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4DA72B7714975764005F7A67 /* Preferences.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DA72B7814975764005F7A67 /* en */,
+			);
+			name = Preferences.xib;
+			sourceTree = "<group>";
+		};
+		4DA72B841497588F005F7A67 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DA72B851497588F005F7A67 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		4DA72B8714975A10005F7A67 /* AlignmentView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DA72B8814975A10005F7A67 /* en */,
+			);
+			name = AlignmentView.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -601,6 +661,7 @@
 				4DA72B6E14975670005F7A67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DA72B6F14975670005F7A67 /* Build configuration list for PBXNativeTarget "EyeBall" */ = {
 			isa = XCConfigurationList;
@@ -609,6 +670,7 @@
 				4DA72B7114975670005F7A67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DA72B7214975670005F7A67 /* Build configuration list for PBXNativeTarget "EyeBallTests" */ = {
 			isa = XCConfigurationList;
@@ -617,6 +679,7 @@
 				4DA72B7414975670005F7A67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
