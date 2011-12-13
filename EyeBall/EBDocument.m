@@ -8,6 +8,10 @@
 
 #import "EBDocument.h"
 #import "EBAlignmentViewController.h"
+#import "EBLociViewController.h"
+#import "EBOrganizerViewController.h"
+#import "EBSequencesViewController.h"
+#import "EBTaxaViewController.h"
 
 @implementation EBDocument
 
@@ -18,6 +22,22 @@
         viewControllers = [[NSMutableArray alloc] init];
         
         ManagingViewController *vc;
+        
+        vc = [[EBOrganizerViewController alloc] init];
+        [vc setManagedObjectContext:[self managedObjectContext]];
+        [viewControllers addObject:vc];
+
+        vc = [[EBTaxaViewController alloc] init];
+        [vc setManagedObjectContext:[self managedObjectContext]];
+        [viewControllers addObject:vc];
+        
+        vc = [[EBLociViewController alloc] init];
+        [vc setManagedObjectContext:[self managedObjectContext]];
+        [viewControllers addObject:vc];
+        
+        vc = [[EBSequencesViewController alloc] init];
+        [vc setManagedObjectContext:[self managedObjectContext]];
+        [viewControllers addObject:vc];
         
         vc = [[EBAlignmentViewController alloc] init];
         [vc setManagedObjectContext:[self managedObjectContext]];

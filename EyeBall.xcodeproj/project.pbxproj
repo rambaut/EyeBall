@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		4D494AB614975EEE007C08CD /* EBAlignmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D494AB514975EEE007C08CD /* EBAlignmentViewController.m */; };
+		4D494AB91497696C007C08CD /* Alignment.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D494AB81497696C007C08CD /* Alignment.m */; };
+		4D494ABD149769A4007C08CD /* Locus.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D494ABC149769A4007C08CD /* Locus.m */; };
+		4D494AC3149769BE007C08CD /* Taxon.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D494AC2149769BE007C08CD /* Taxon.m */; };
+		4D91B10514976A05006BE06F /* Sequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D91B10414976A05006BE06F /* Sequence.m */; };
+		4D91B10814976B6F006BE06F /* EBOrganizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D91B10714976B6F006BE06F /* EBOrganizerViewController.m */; };
+		4D91B10B14976B95006BE06F /* OrganizerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D91B10914976B95006BE06F /* OrganizerView.xib */; };
+		4D91B10E14976D0C006BE06F /* SequencesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D91B10C14976D0C006BE06F /* SequencesView.xib */; };
+		4D91B11114976D24006BE06F /* TaxaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D91B10F14976D24006BE06F /* TaxaView.xib */; };
+		4D91B11414976D34006BE06F /* LociView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D91B11214976D34006BE06F /* LociView.xib */; };
 		4DA72B1A1497566F005F7A67 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA72B191497566F005F7A67 /* Cocoa.framework */; };
 		4DA72B241497566F005F7A67 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4DA72B221497566F005F7A67 /* InfoPlist.strings */; };
 		4DA72B261497566F005F7A67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA72B251497566F005F7A67 /* main.m */; };
@@ -35,6 +44,9 @@
 		4DA72B861497588F005F7A67 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4DA72B841497588F005F7A67 /* Localizable.strings */; };
 		4DA72B8914975A10005F7A67 /* AlignmentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DA72B8714975A10005F7A67 /* AlignmentView.xib */; };
 		4DAB32B514975E310084FB3E /* ManagingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAB32B314975E310084FB3E /* ManagingViewController.m */; };
+		4DD74F6B14976E4900BB547B /* EBSequencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD74F6A14976E4900BB547B /* EBSequencesViewController.m */; };
+		4DD74F6E14976E6D00BB547B /* EBTaxaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD74F6D14976E6D00BB547B /* EBTaxaViewController.m */; };
+		4DD74F7114976E8A00BB547B /* EBLociViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD74F7014976E8A00BB547B /* EBLociViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +69,20 @@
 /* Begin PBXFileReference section */
 		4D494AB414975EEE007C08CD /* EBAlignmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBAlignmentViewController.h; sourceTree = "<group>"; };
 		4D494AB514975EEE007C08CD /* EBAlignmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBAlignmentViewController.m; sourceTree = "<group>"; };
+		4D494AB71497696C007C08CD /* Alignment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Alignment.h; path = Data/Alignment.h; sourceTree = "<group>"; };
+		4D494AB81497696C007C08CD /* Alignment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Alignment.m; path = Data/Alignment.m; sourceTree = "<group>"; };
+		4D494ABB149769A4007C08CD /* Locus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Locus.h; path = Data/Locus.h; sourceTree = "<group>"; };
+		4D494ABC149769A4007C08CD /* Locus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Locus.m; path = Data/Locus.m; sourceTree = "<group>"; };
+		4D494AC1149769BE007C08CD /* Taxon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Taxon.h; sourceTree = "<group>"; };
+		4D494AC2149769BE007C08CD /* Taxon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Taxon.m; sourceTree = "<group>"; };
+		4D91B10314976A05006BE06F /* Sequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sequence.h; sourceTree = "<group>"; };
+		4D91B10414976A05006BE06F /* Sequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sequence.m; sourceTree = "<group>"; };
+		4D91B10614976B6F006BE06F /* EBOrganizerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBOrganizerViewController.h; sourceTree = "<group>"; };
+		4D91B10714976B6F006BE06F /* EBOrganizerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBOrganizerViewController.m; sourceTree = "<group>"; };
+		4D91B10A14976B95006BE06F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/OrganizerView.xib; sourceTree = "<group>"; };
+		4D91B10D14976D0C006BE06F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SequencesView.xib; sourceTree = "<group>"; };
+		4D91B11014976D24006BE06F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TaxaView.xib; sourceTree = "<group>"; };
+		4D91B11314976D34006BE06F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LociView.xib; sourceTree = "<group>"; };
 		4DA72B151497566F005F7A67 /* EyeBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EyeBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DA72B191497566F005F7A67 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		4DA72B1C1497566F005F7A67 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -100,6 +126,12 @@
 		4DA72B8814975A10005F7A67 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AlignmentView.xib; sourceTree = "<group>"; };
 		4DAB32B214975E310084FB3E /* ManagingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagingViewController.h; sourceTree = "<group>"; };
 		4DAB32B314975E310084FB3E /* ManagingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagingViewController.m; sourceTree = "<group>"; };
+		4DD74F6914976E4900BB547B /* EBSequencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBSequencesViewController.h; sourceTree = "<group>"; };
+		4DD74F6A14976E4900BB547B /* EBSequencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBSequencesViewController.m; sourceTree = "<group>"; };
+		4DD74F6C14976E6D00BB547B /* EBTaxaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBTaxaViewController.h; sourceTree = "<group>"; };
+		4DD74F6D14976E6D00BB547B /* EBTaxaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBTaxaViewController.m; sourceTree = "<group>"; };
+		4DD74F6F14976E8A00BB547B /* EBLociViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBLociViewController.h; sourceTree = "<group>"; };
+		4DD74F7014976E8A00BB547B /* EBLociViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBLociViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +166,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D494ABA1497698C007C08CD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4D494AB71497696C007C08CD /* Alignment.h */,
+				4D494AB81497696C007C08CD /* Alignment.m */,
+				4D494ABB149769A4007C08CD /* Locus.h */,
+				4D494ABC149769A4007C08CD /* Locus.m */,
+				4D91B10314976A05006BE06F /* Sequence.h */,
+				4D91B10414976A05006BE06F /* Sequence.m */,
+				4D494AC1149769BE007C08CD /* Taxon.h */,
+				4D494AC2149769BE007C08CD /* Taxon.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		4DA72B0A1497566F005F7A67 = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +237,18 @@
 				4D494AB414975EEE007C08CD /* EBAlignmentViewController.h */,
 				4D494AB514975EEE007C08CD /* EBAlignmentViewController.m */,
 				4DA72B8714975A10005F7A67 /* AlignmentView.xib */,
+				4DD74F6F14976E8A00BB547B /* EBLociViewController.h */,
+				4DD74F7014976E8A00BB547B /* EBLociViewController.m */,
+				4D91B11214976D34006BE06F /* LociView.xib */,
+				4D91B10614976B6F006BE06F /* EBOrganizerViewController.h */,
+				4D91B10714976B6F006BE06F /* EBOrganizerViewController.m */,
+				4D91B10914976B95006BE06F /* OrganizerView.xib */,
+				4DD74F6914976E4900BB547B /* EBSequencesViewController.h */,
+				4DD74F6A14976E4900BB547B /* EBSequencesViewController.m */,
+				4D91B10C14976D0C006BE06F /* SequencesView.xib */,
+				4DD74F6C14976E6D00BB547B /* EBTaxaViewController.h */,
+				4DD74F6D14976E6D00BB547B /* EBTaxaViewController.m */,
+				4D91B10F14976D24006BE06F /* TaxaView.xib */,
 				4DAB32B214975E310084FB3E /* ManagingViewController.h */,
 				4DAB32B314975E310084FB3E /* ManagingViewController.m */,
 				4DA72B7D149757DE005F7A67 /* PreferenceController.h */,
@@ -197,6 +256,7 @@
 				4DA72B7714975764005F7A67 /* Preferences.xib */,
 				4DA72B311497566F005F7A67 /* MainMenu.xib */,
 				4DA72B341497566F005F7A67 /* EBDocument.xcdatamodeld */,
+				4D494ABA1497698C007C08CD /* Data */,
 				4DA72B201497566F005F7A67 /* Supporting Files */,
 			);
 			path = EyeBall;
@@ -321,6 +381,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Andrew Rambaut";
 			};
 			buildConfigurationList = 4DA72B0F1497566F005F7A67 /* Build configuration list for PBXProject "EyeBall" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -354,6 +415,10 @@
 				4DA72B7A14975764005F7A67 /* Preferences.xib in Resources */,
 				4DA72B861497588F005F7A67 /* Localizable.strings in Resources */,
 				4DA72B8914975A10005F7A67 /* AlignmentView.xib in Resources */,
+				4D91B10B14976B95006BE06F /* OrganizerView.xib in Resources */,
+				4D91B10E14976D0C006BE06F /* SequencesView.xib in Resources */,
+				4D91B11114976D24006BE06F /* TaxaView.xib in Resources */,
+				4D91B11414976D34006BE06F /* LociView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +468,14 @@
 				4DA72B83149757F4005F7A67 /* AppController.m in Sources */,
 				4DAB32B514975E310084FB3E /* ManagingViewController.m in Sources */,
 				4D494AB614975EEE007C08CD /* EBAlignmentViewController.m in Sources */,
+				4D494AB91497696C007C08CD /* Alignment.m in Sources */,
+				4D494ABD149769A4007C08CD /* Locus.m in Sources */,
+				4D494AC3149769BE007C08CD /* Taxon.m in Sources */,
+				4D91B10514976A05006BE06F /* Sequence.m in Sources */,
+				4D91B10814976B6F006BE06F /* EBOrganizerViewController.m in Sources */,
+				4DD74F6B14976E4900BB547B /* EBSequencesViewController.m in Sources */,
+				4DD74F6E14976E6D00BB547B /* EBTaxaViewController.m in Sources */,
+				4DD74F7114976E8A00BB547B /* EBLociViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +513,38 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		4D91B10914976B95006BE06F /* OrganizerView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D91B10A14976B95006BE06F /* en */,
+			);
+			name = OrganizerView.xib;
+			sourceTree = "<group>";
+		};
+		4D91B10C14976D0C006BE06F /* SequencesView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D91B10D14976D0C006BE06F /* en */,
+			);
+			name = SequencesView.xib;
+			sourceTree = "<group>";
+		};
+		4D91B10F14976D24006BE06F /* TaxaView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D91B11014976D24006BE06F /* en */,
+			);
+			name = TaxaView.xib;
+			sourceTree = "<group>";
+		};
+		4D91B11214976D34006BE06F /* LociView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D91B11314976D34006BE06F /* en */,
+			);
+			name = LociView.xib;
+			sourceTree = "<group>";
+		};
 		4DA72B221497566F005F7A67 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

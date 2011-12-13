@@ -1,5 +1,5 @@
 //
-//  EBAlignmentViewController.h
+//  EBOrganizerViewController.h
 //  EyeBall
 //
 //  Created by Andrew Rambaut on 13/12/2011.
@@ -8,6 +8,11 @@
 
 #import "ManagingViewController.h"
 
-@interface EBAlignmentViewController : ManagingViewController
+@interface EBOrganizerViewController : ManagingViewController {
+    
+    IBOutlet NSTableView *table;
+
+}
 
 @end
+

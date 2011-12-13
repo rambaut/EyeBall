@@ -1,4 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="untitled.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="878" systemVersion="11C74" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Alignment" syncable="YES">
+        <relationship name="loci" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Locus" syncable="YES"/>
+        <relationship name="sequences" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Sequence" syncable="YES"/>
+        <relationship name="taxa" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Taxon" syncable="YES"/>
+    </entity>
+    <entity name="Locus" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Sequence" representedClassName="Sequence" syncable="YES">
+        <attribute name="file" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="source" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="locus" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Locus" syncable="YES"/>
+        <relationship name="taxon" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Taxon" syncable="YES"/>
+    </entity>
+    <entity name="Taxon" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Alignment" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="Locus" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="Sequence" positionX="160" positionY="192" width="128" height="105"/>
+        <element name="Taxon" positionX="160" positionY="192" width="128" height="75"/>
+    </elements>
 </model>
