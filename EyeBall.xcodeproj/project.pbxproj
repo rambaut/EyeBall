@@ -13,6 +13,8 @@
 		4D494AC3149769BE007C08CD /* Taxon.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D494AC2149769BE007C08CD /* Taxon.m */; };
 		4D6E5D181497859F00786670 /* SequencesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D6E5D161497859F00786670 /* SequencesView.xib */; };
 		4D6E5D1B149785A800786670 /* TaxaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D6E5D19149785A800786670 /* TaxaView.xib */; };
+		4D6E5D1E14978B3400786670 /* EBSourcesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6E5D1D14978B3400786670 /* EBSourcesController.m */; };
+		4D6E5D2214978FF900786670 /* EyeBall.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4D6E5D2114978FF900786670 /* EyeBall.icns */; };
 		4D91B10514976A05006BE06F /* Sequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D91B10414976A05006BE06F /* Sequence.m */; };
 		4D91B10814976B6F006BE06F /* EBOrganizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D91B10714976B6F006BE06F /* EBOrganizerViewController.m */; };
 		4D91B10B14976B95006BE06F /* OrganizerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D91B10914976B95006BE06F /* OrganizerView.xib */; };
@@ -77,6 +79,9 @@
 		4D494AC2149769BE007C08CD /* Taxon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Taxon.m; sourceTree = "<group>"; };
 		4D6E5D171497859F00786670 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SequencesView.xib; sourceTree = "<group>"; };
 		4D6E5D1A149785A800786670 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TaxaView.xib; sourceTree = "<group>"; };
+		4D6E5D1C14978B3400786670 /* EBSourcesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBSourcesController.h; sourceTree = "<group>"; };
+		4D6E5D1D14978B3400786670 /* EBSourcesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBSourcesController.m; sourceTree = "<group>"; };
+		4D6E5D2114978FF900786670 /* EyeBall.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = EyeBall.icns; sourceTree = "<group>"; };
 		4D91B10314976A05006BE06F /* Sequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sequence.h; sourceTree = "<group>"; };
 		4D91B10414976A05006BE06F /* Sequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sequence.m; sourceTree = "<group>"; };
 		4D91B10614976B6F006BE06F /* EBOrganizerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBOrganizerViewController.h; sourceTree = "<group>"; };
@@ -234,6 +239,8 @@
 				4DA72B2B1497566F005F7A67 /* EBDocument.h */,
 				4DA72B2C1497566F005F7A67 /* EBDocument.m */,
 				4DA72B2E1497566F005F7A67 /* EBDocument.xib */,
+				4D6E5D1C14978B3400786670 /* EBSourcesController.h */,
+				4D6E5D1D14978B3400786670 /* EBSourcesController.m */,
 				4D494AB414975EEE007C08CD /* EBAlignmentViewController.h */,
 				4D494AB514975EEE007C08CD /* EBAlignmentViewController.m */,
 				4DA72B8714975A10005F7A67 /* AlignmentView.xib */,
@@ -271,6 +278,7 @@
 				4DA72B251497566F005F7A67 /* main.m */,
 				4DA72B271497566F005F7A67 /* EyeBall-Prefix.pch */,
 				4DA72B281497566F005F7A67 /* Credits.rtf */,
+				4D6E5D2114978FF900786670 /* EyeBall.icns */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -419,6 +427,7 @@
 				4D91B11414976D34006BE06F /* LociView.xib in Resources */,
 				4D6E5D181497859F00786670 /* SequencesView.xib in Resources */,
 				4D6E5D1B149785A800786670 /* TaxaView.xib in Resources */,
+				4D6E5D2214978FF900786670 /* EyeBall.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +485,7 @@
 				4DD74F6B14976E4900BB547B /* EBSequencesViewController.m in Sources */,
 				4DD74F6E14976E6D00BB547B /* EBTaxaViewController.m in Sources */,
 				4DD74F7114976E8A00BB547B /* EBLociViewController.m in Sources */,
+				4D6E5D1E14978B3400786670 /* EBSourcesController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
