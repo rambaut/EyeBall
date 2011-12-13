@@ -10,4 +10,13 @@
 
 @implementation EBTaxaViewController
 
+- (id)init
+{
+    self = [super initWithNibName:@"TaxaView" bundle:nil];
+    if (self) {
+        [self setTitle:@"Taxa"];
+    }
+    return self;
+}
+
 @end

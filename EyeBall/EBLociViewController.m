@@ -10,4 +10,13 @@
 
 @implementation EBLociViewController
 
+- (id)init
+{
+    self = [super initWithNibName:@"LociView" bundle:nil];
+    if (self) {
+        [self setTitle:@"Loci"];
+    }
+    return self;
+}
+
 @end

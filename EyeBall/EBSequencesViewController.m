@@ -10,4 +10,13 @@
 
 @implementation EBSequencesViewController
 
+- (id)init
+{
+    self = [super initWithNibName:@"SequencesView" bundle:nil];
+    if (self) {
+        [self setTitle:@"Sequences"];
+    }
+    return self;
+}
+
 @end

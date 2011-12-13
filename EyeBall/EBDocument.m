@@ -58,7 +58,7 @@
     [super windowControllerDidLoadNib:aController];
 
     // Add any code here that needs to be executed once the windowController has loaded the document's window.
-    [self displayViewController:[viewControllers objectAtIndex:0]];    
+    [self displayViewController:[viewControllers objectAtIndex:2]];    
 }
 
 - (void)displayViewController:(ManagingViewController *)vc
