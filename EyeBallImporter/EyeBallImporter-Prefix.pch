@@ -1,0 +1,6 @@
+//
+// Prefix header for all source files of the 'EyeBallImporter' target in the 'EyeBallImporter' project
+//
+
+#ifdef __OBJC__
+#endif
