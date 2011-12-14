@@ -8,13 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4D494AB614975EEE007C08CD /* EBAlignmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D494AB514975EEE007C08CD /* EBAlignmentViewController.m */; };
-		4D494AB91497696C007C08CD /* Alignment.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D494AB81497696C007C08CD /* Alignment.m */; };
-		4D494ABD149769A4007C08CD /* Locus.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D494ABC149769A4007C08CD /* Locus.m */; };
-		4D494AC3149769BE007C08CD /* Taxon.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D494AC2149769BE007C08CD /* Taxon.m */; };
 		4D6E5D181497859F00786670 /* SequencesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D6E5D161497859F00786670 /* SequencesView.xib */; };
 		4D6E5D1B149785A800786670 /* TaxaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D6E5D19149785A800786670 /* TaxaView.xib */; };
 		4D6E5D2214978FF900786670 /* EyeBall.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4D6E5D2114978FF900786670 /* EyeBall.icns */; };
-		4D91B10514976A05006BE06F /* Sequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D91B10414976A05006BE06F /* Sequence.m */; };
 		4D91B10814976B6F006BE06F /* EBOrganizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D91B10714976B6F006BE06F /* EBOrganizerViewController.m */; };
 		4D91B10B14976B95006BE06F /* OrganizerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D91B10914976B95006BE06F /* OrganizerView.xib */; };
 		4D91B11414976D34006BE06F /* LociView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D91B11214976D34006BE06F /* LociView.xib */; };
@@ -45,17 +41,13 @@
 		4DA72B861497588F005F7A67 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4DA72B841497588F005F7A67 /* Localizable.strings */; };
 		4DA72B8914975A10005F7A67 /* AlignmentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DA72B8714975A10005F7A67 /* AlignmentView.xib */; };
 		4DAB32B514975E310084FB3E /* ManagingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAB32B314975E310084FB3E /* ManagingViewController.m */; };
+		4DD094121498CB44000D9F17 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 4DD094111498CB44000D9F17 /* Data */; };
+		4DD094141498CBB1000D9F17 /* SourceList in Resources */ = {isa = PBXBuildFile; fileRef = 4DD094131498CBB1000D9F17 /* SourceList */; };
+		4DD094161498CBD0000D9F17 /* Utils in Resources */ = {isa = PBXBuildFile; fileRef = 4DD094151498CBCF000D9F17 /* Utils */; };
+		4DD094191498CCAC000D9F17 /* SourceList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4DD094171498CCAC000D9F17 /* SourceList.xcdatamodeld */; };
 		4DD74F6B14976E4900BB547B /* EBSequencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD74F6A14976E4900BB547B /* EBSequencesViewController.m */; };
 		4DD74F6E14976E6D00BB547B /* EBTaxaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD74F6D14976E6D00BB547B /* EBTaxaViewController.m */; };
 		4DD74F7114976E8A00BB547B /* EBLociViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD74F7014976E8A00BB547B /* EBLociViewController.m */; };
-		4DE6A9181498A80C008634C8 /* BaseNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE6A90C1498A80C008634C8 /* BaseNode.m */; };
-		4DE6A9191498A80C008634C8 /* ChildEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE6A90E1498A80C008634C8 /* ChildEditController.m */; };
-		4DE6A91A1498A80C008634C8 /* ChildNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE6A9101498A80C008634C8 /* ChildNode.m */; };
-		4DE6A91B1498A80C008634C8 /* ImageAndTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE6A9121498A80C008634C8 /* ImageAndTextCell.m */; };
-		4DE6A91C1498A80C008634C8 /* NSArray_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE6A9141498A80C008634C8 /* NSArray_Extensions.m */; };
-		4DE6A91D1498A80C008634C8 /* Outline.dict in Resources */ = {isa = PBXBuildFile; fileRef = 4DE6A9151498A80C008634C8 /* Outline.dict */; };
-		4DE6A91E1498A80C008634C8 /* SeparatorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE6A9171498A80C008634C8 /* SeparatorCell.m */; };
-		4DE6A9221498AB66008634C8 /* SourceListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE6A9211498AB66008634C8 /* SourceListController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,17 +70,9 @@
 /* Begin PBXFileReference section */
 		4D494AB414975EEE007C08CD /* EBAlignmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBAlignmentViewController.h; sourceTree = "<group>"; };
 		4D494AB514975EEE007C08CD /* EBAlignmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBAlignmentViewController.m; sourceTree = "<group>"; };
-		4D494AB71497696C007C08CD /* Alignment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Alignment.h; path = Data/Alignment.h; sourceTree = "<group>"; };
-		4D494AB81497696C007C08CD /* Alignment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Alignment.m; path = Data/Alignment.m; sourceTree = "<group>"; };
-		4D494ABB149769A4007C08CD /* Locus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Locus.h; path = Data/Locus.h; sourceTree = "<group>"; };
-		4D494ABC149769A4007C08CD /* Locus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Locus.m; path = Data/Locus.m; sourceTree = "<group>"; };
-		4D494AC1149769BE007C08CD /* Taxon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Taxon.h; sourceTree = "<group>"; };
-		4D494AC2149769BE007C08CD /* Taxon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Taxon.m; sourceTree = "<group>"; };
 		4D6E5D171497859F00786670 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SequencesView.xib; sourceTree = "<group>"; };
 		4D6E5D1A149785A800786670 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TaxaView.xib; sourceTree = "<group>"; };
 		4D6E5D2114978FF900786670 /* EyeBall.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = EyeBall.icns; sourceTree = "<group>"; };
-		4D91B10314976A05006BE06F /* Sequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sequence.h; sourceTree = "<group>"; };
-		4D91B10414976A05006BE06F /* Sequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sequence.m; sourceTree = "<group>"; };
 		4D91B10614976B6F006BE06F /* EBOrganizerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBOrganizerViewController.h; sourceTree = "<group>"; };
 		4D91B10714976B6F006BE06F /* EBOrganizerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBOrganizerViewController.m; sourceTree = "<group>"; };
 		4D91B10A14976B95006BE06F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/OrganizerView.xib; sourceTree = "<group>"; };
@@ -136,27 +120,16 @@
 		4DA72B8814975A10005F7A67 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AlignmentView.xib; sourceTree = "<group>"; };
 		4DAB32B214975E310084FB3E /* ManagingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagingViewController.h; sourceTree = "<group>"; };
 		4DAB32B314975E310084FB3E /* ManagingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagingViewController.m; sourceTree = "<group>"; };
+		4DD094111498CB44000D9F17 /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
+		4DD094131498CBB1000D9F17 /* SourceList */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SourceList; sourceTree = "<group>"; };
+		4DD094151498CBCF000D9F17 /* Utils */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Utils; sourceTree = "<group>"; };
+		4DD094181498CCAC000D9F17 /* SourceList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SourceList.xcdatamodel; sourceTree = "<group>"; };
 		4DD74F6914976E4900BB547B /* EBSequencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBSequencesViewController.h; sourceTree = "<group>"; };
 		4DD74F6A14976E4900BB547B /* EBSequencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBSequencesViewController.m; sourceTree = "<group>"; };
 		4DD74F6C14976E6D00BB547B /* EBTaxaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBTaxaViewController.h; sourceTree = "<group>"; };
 		4DD74F6D14976E6D00BB547B /* EBTaxaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBTaxaViewController.m; sourceTree = "<group>"; };
 		4DD74F6F14976E8A00BB547B /* EBLociViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBLociViewController.h; sourceTree = "<group>"; };
 		4DD74F7014976E8A00BB547B /* EBLociViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBLociViewController.m; sourceTree = "<group>"; };
-		4DE6A90B1498A80C008634C8 /* BaseNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNode.h; sourceTree = "<group>"; };
-		4DE6A90C1498A80C008634C8 /* BaseNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNode.m; sourceTree = "<group>"; };
-		4DE6A90D1498A80C008634C8 /* ChildEditController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildEditController.h; sourceTree = "<group>"; };
-		4DE6A90E1498A80C008634C8 /* ChildEditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildEditController.m; sourceTree = "<group>"; };
-		4DE6A90F1498A80C008634C8 /* ChildNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildNode.h; sourceTree = "<group>"; };
-		4DE6A9101498A80C008634C8 /* ChildNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildNode.m; sourceTree = "<group>"; };
-		4DE6A9111498A80C008634C8 /* ImageAndTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageAndTextCell.h; sourceTree = "<group>"; };
-		4DE6A9121498A80C008634C8 /* ImageAndTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageAndTextCell.m; sourceTree = "<group>"; };
-		4DE6A9131498A80C008634C8 /* NSArray_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSArray_Extensions.h; path = SourceList/NSArray_Extensions.h; sourceTree = "<group>"; };
-		4DE6A9141498A80C008634C8 /* NSArray_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSArray_Extensions.m; path = SourceList/NSArray_Extensions.m; sourceTree = "<group>"; };
-		4DE6A9151498A80C008634C8 /* Outline.dict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Outline.dict; sourceTree = "<group>"; };
-		4DE6A9161498A80C008634C8 /* SeparatorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeparatorCell.h; sourceTree = "<group>"; };
-		4DE6A9171498A80C008634C8 /* SeparatorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeparatorCell.m; sourceTree = "<group>"; };
-		4DE6A9201498AB66008634C8 /* SourceListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SourceListController.h; sourceTree = "<group>"; };
-		4DE6A9211498AB66008634C8 /* SourceListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SourceListController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,21 +164,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4D494ABA1497698C007C08CD /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				4D494AB71497696C007C08CD /* Alignment.h */,
-				4D494AB81497696C007C08CD /* Alignment.m */,
-				4D494ABB149769A4007C08CD /* Locus.h */,
-				4D494ABC149769A4007C08CD /* Locus.m */,
-				4D91B10314976A05006BE06F /* Sequence.h */,
-				4D91B10414976A05006BE06F /* Sequence.m */,
-				4D494AC1149769BE007C08CD /* Taxon.h */,
-				4D494AC2149769BE007C08CD /* Taxon.m */,
-			);
-			name = Data;
-			sourceTree = "<group>";
-		};
 		4DA72B0A1497566F005F7A67 = {
 			isa = PBXGroup;
 			children = (
@@ -281,9 +239,10 @@
 				4DA72B7714975764005F7A67 /* Preferences.xib */,
 				4DA72B311497566F005F7A67 /* MainMenu.xib */,
 				4DA72B341497566F005F7A67 /* EBDocument.xcdatamodeld */,
-				4D494ABA1497698C007C08CD /* Data */,
-				4DE6A90A1498A80C008634C8 /* SourceList */,
-				4DE6A91F1498A862008634C8 /* Utils */,
+				4DD094171498CCAC000D9F17 /* SourceList.xcdatamodeld */,
+				4DD094131498CBB1000D9F17 /* SourceList */,
+				4DD094111498CB44000D9F17 /* Data */,
+				4DD094151498CBCF000D9F17 /* Utils */,
 				4DA72B201497566F005F7A67 /* Supporting Files */,
 			);
 			path = EyeBall;
@@ -343,35 +302,6 @@
 				4DA72B6914975670005F7A67 /* EyeBallImporter-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		4DE6A90A1498A80C008634C8 /* SourceList */ = {
-			isa = PBXGroup;
-			children = (
-				4DE6A9201498AB66008634C8 /* SourceListController.h */,
-				4DE6A9211498AB66008634C8 /* SourceListController.m */,
-				4DE6A90B1498A80C008634C8 /* BaseNode.h */,
-				4DE6A90C1498A80C008634C8 /* BaseNode.m */,
-				4DE6A90D1498A80C008634C8 /* ChildEditController.h */,
-				4DE6A90E1498A80C008634C8 /* ChildEditController.m */,
-				4DE6A90F1498A80C008634C8 /* ChildNode.h */,
-				4DE6A9101498A80C008634C8 /* ChildNode.m */,
-				4DE6A9111498A80C008634C8 /* ImageAndTextCell.h */,
-				4DE6A9121498A80C008634C8 /* ImageAndTextCell.m */,
-				4DE6A9151498A80C008634C8 /* Outline.dict */,
-				4DE6A9161498A80C008634C8 /* SeparatorCell.h */,
-				4DE6A9171498A80C008634C8 /* SeparatorCell.m */,
-			);
-			path = SourceList;
-			sourceTree = "<group>";
-		};
-		4DE6A91F1498A862008634C8 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				4DE6A9131498A80C008634C8 /* NSArray_Extensions.h */,
-				4DE6A9141498A80C008634C8 /* NSArray_Extensions.m */,
-			);
-			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -477,7 +407,9 @@
 				4D6E5D181497859F00786670 /* SequencesView.xib in Resources */,
 				4D6E5D1B149785A800786670 /* TaxaView.xib in Resources */,
 				4D6E5D2214978FF900786670 /* EyeBall.icns in Resources */,
-				4DE6A91D1498A80C008634C8 /* Outline.dict in Resources */,
+				4DD094121498CB44000D9F17 /* Data in Resources */,
+				4DD094141498CBB1000D9F17 /* SourceList in Resources */,
+				4DD094161498CBD0000D9F17 /* Utils in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,21 +459,11 @@
 				4DA72B83149757F4005F7A67 /* AppController.m in Sources */,
 				4DAB32B514975E310084FB3E /* ManagingViewController.m in Sources */,
 				4D494AB614975EEE007C08CD /* EBAlignmentViewController.m in Sources */,
-				4D494AB91497696C007C08CD /* Alignment.m in Sources */,
-				4D494ABD149769A4007C08CD /* Locus.m in Sources */,
-				4D494AC3149769BE007C08CD /* Taxon.m in Sources */,
-				4D91B10514976A05006BE06F /* Sequence.m in Sources */,
 				4D91B10814976B6F006BE06F /* EBOrganizerViewController.m in Sources */,
 				4DD74F6B14976E4900BB547B /* EBSequencesViewController.m in Sources */,
 				4DD74F6E14976E6D00BB547B /* EBTaxaViewController.m in Sources */,
 				4DD74F7114976E8A00BB547B /* EBLociViewController.m in Sources */,
-				4DE6A9181498A80C008634C8 /* BaseNode.m in Sources */,
-				4DE6A9191498A80C008634C8 /* ChildEditController.m in Sources */,
-				4DE6A91A1498A80C008634C8 /* ChildNode.m in Sources */,
-				4DE6A91B1498A80C008634C8 /* ImageAndTextCell.m in Sources */,
-				4DE6A91C1498A80C008634C8 /* NSArray_Extensions.m in Sources */,
-				4DE6A91E1498A80C008634C8 /* SeparatorCell.m in Sources */,
-				4DE6A9221498AB66008634C8 /* SourceListController.m in Sources */,
+				4DD094191498CCAC000D9F17 /* SourceList.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -862,6 +784,16 @@
 			);
 			currentVersion = 4DA72B351497566F005F7A67 /* EBDocument.xcdatamodel */;
 			path = EBDocument.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		4DD094171498CCAC000D9F17 /* SourceList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4DD094181498CCAC000D9F17 /* SourceList.xcdatamodel */,
+			);
+			currentVersion = 4DD094181498CCAC000D9F17 /* SourceList.xcdatamodel */;
+			path = SourceList.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
