@@ -44,7 +44,7 @@
 		4DD094121498CB44000D9F17 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 4DD094111498CB44000D9F17 /* Data */; };
 		4DD094141498CBB1000D9F17 /* SourceList in Resources */ = {isa = PBXBuildFile; fileRef = 4DD094131498CBB1000D9F17 /* SourceList */; };
 		4DD094161498CBD0000D9F17 /* Utils in Resources */ = {isa = PBXBuildFile; fileRef = 4DD094151498CBCF000D9F17 /* Utils */; };
-		4DD094191498CCAC000D9F17 /* SourceList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4DD094171498CCAC000D9F17 /* SourceList.xcdatamodeld */; };
+		4DD0941C1498CCE8000D9F17 /* SourceList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4DD0941A1498CCE8000D9F17 /* SourceList.xcdatamodeld */; };
 		4DD74F6B14976E4900BB547B /* EBSequencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD74F6A14976E4900BB547B /* EBSequencesViewController.m */; };
 		4DD74F6E14976E6D00BB547B /* EBTaxaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD74F6D14976E6D00BB547B /* EBTaxaViewController.m */; };
 		4DD74F7114976E8A00BB547B /* EBLociViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD74F7014976E8A00BB547B /* EBLociViewController.m */; };
@@ -123,7 +123,7 @@
 		4DD094111498CB44000D9F17 /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
 		4DD094131498CBB1000D9F17 /* SourceList */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SourceList; sourceTree = "<group>"; };
 		4DD094151498CBCF000D9F17 /* Utils */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Utils; sourceTree = "<group>"; };
-		4DD094181498CCAC000D9F17 /* SourceList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SourceList.xcdatamodel; sourceTree = "<group>"; };
+		4DD0941B1498CCE8000D9F17 /* SourceList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SourceList.xcdatamodel; sourceTree = "<group>"; };
 		4DD74F6914976E4900BB547B /* EBSequencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBSequencesViewController.h; sourceTree = "<group>"; };
 		4DD74F6A14976E4900BB547B /* EBSequencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBSequencesViewController.m; sourceTree = "<group>"; };
 		4DD74F6C14976E6D00BB547B /* EBTaxaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBTaxaViewController.h; sourceTree = "<group>"; };
@@ -234,12 +234,12 @@
 				4D6E5D19149785A800786670 /* TaxaView.xib */,
 				4DAB32B214975E310084FB3E /* ManagingViewController.h */,
 				4DAB32B314975E310084FB3E /* ManagingViewController.m */,
+				4DD0941A1498CCE8000D9F17 /* SourceList.xcdatamodeld */,
 				4DA72B7D149757DE005F7A67 /* PreferenceController.h */,
 				4DA72B7E149757DE005F7A67 /* PreferenceController.m */,
 				4DA72B7714975764005F7A67 /* Preferences.xib */,
 				4DA72B311497566F005F7A67 /* MainMenu.xib */,
 				4DA72B341497566F005F7A67 /* EBDocument.xcdatamodeld */,
-				4DD094171498CCAC000D9F17 /* SourceList.xcdatamodeld */,
 				4DD094131498CBB1000D9F17 /* SourceList */,
 				4DD094111498CB44000D9F17 /* Data */,
 				4DD094151498CBCF000D9F17 /* Utils */,
@@ -463,7 +463,7 @@
 				4DD74F6B14976E4900BB547B /* EBSequencesViewController.m in Sources */,
 				4DD74F6E14976E6D00BB547B /* EBTaxaViewController.m in Sources */,
 				4DD74F7114976E8A00BB547B /* EBLociViewController.m in Sources */,
-				4DD094191498CCAC000D9F17 /* SourceList.xcdatamodeld in Sources */,
+				4DD0941C1498CCE8000D9F17 /* SourceList.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -787,12 +787,12 @@
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
-		4DD094171498CCAC000D9F17 /* SourceList.xcdatamodeld */ = {
+		4DD0941A1498CCE8000D9F17 /* SourceList.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				4DD094181498CCAC000D9F17 /* SourceList.xcdatamodel */,
+				4DD0941B1498CCE8000D9F17 /* SourceList.xcdatamodel */,
 			);
-			currentVersion = 4DD094181498CCAC000D9F17 /* SourceList.xcdatamodel */;
+			currentVersion = 4DD0941B1498CCE8000D9F17 /* SourceList.xcdatamodel */;
 			path = SourceList.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
