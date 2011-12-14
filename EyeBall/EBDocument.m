@@ -7,11 +7,14 @@
 //
 
 #import "EBDocument.h"
+#import "SourceListController.h"
 #import "EBAlignmentViewController.h"
 #import "EBLociViewController.h"
 #import "EBOrganizerViewController.h"
 #import "EBSequencesViewController.h"
 #import "EBTaxaViewController.h"
+
+float const kMinOutlineViewSplit = 120.0f;
 
 @implementation EBDocument
 
@@ -19,29 +22,24 @@
 {
     self = [super init];
     if (self) {
-        viewControllers = [[NSMutableArray alloc] init];
-        
         ManagingViewController *vc;
         
-        vc = [[EBOrganizerViewController alloc] init];
-        [vc setManagedObjectContext:[self managedObjectContext]];
-        [viewControllers addObject:vc];
+        organizerViewController = [[EBOrganizerViewController alloc] init];
+        [organizerViewController setManagedObjectContext:[self managedObjectContext]];
 
-        vc = [[EBTaxaViewController alloc] init];
-        [vc setManagedObjectContext:[self managedObjectContext]];
-        [viewControllers addObject:vc];
+        taxaViewController = [[EBTaxaViewController alloc] init];
+        [taxaViewController setManagedObjectContext:[self managedObjectContext]];
         
-        vc = [[EBLociViewController alloc] init];
-        [vc setManagedObjectContext:[self managedObjectContext]];
-        [viewControllers addObject:vc];
+        lociViewController = [[EBLociViewController alloc] init];
+        [lociViewController setManagedObjectContext:[self managedObjectContext]];
         
-        vc = [[EBSequencesViewController alloc] init];
-        [vc setManagedObjectContext:[self managedObjectContext]];
-        [viewControllers addObject:vc];
+        sequencesViewController = [[EBSequencesViewController alloc] init];
+        [sequencesViewController setManagedObjectContext:[self managedObjectContext]];
         
-        vc = [[EBAlignmentViewController alloc] init];
-        [vc setManagedObjectContext:[self managedObjectContext]];
-        [viewControllers addObject:vc];
+        alignmentViewController = [[EBAlignmentViewController alloc] init];
+        [alignmentViewController setManagedObjectContext:[self managedObjectContext]];
+        
+        currentViewController = organizerViewController;
     }
     return self;
 }
@@ -58,7 +56,7 @@
     [super windowControllerDidLoadNib:aController];
 
     // Add any code here that needs to be executed once the windowController has loaded the document's window.
-    [self displayViewController:[viewControllers objectAtIndex:2]];    
+    [self displayViewController: currentViewController];    
 }
 
 - (void)displayViewController:(ManagingViewController *)vc
@@ -80,4 +78,50 @@
     return YES;
 }
 
+#pragma mark - Split View Delegate
+
+// -------------------------------------------------------------------------------
+//	splitView:constrainMinCoordinate:
+//
+//	What you really have to do to set the minimum size of both subviews to kMinOutlineViewSplit points.
+// -------------------------------------------------------------------------------
+- (CGFloat)splitView:(NSSplitView *)splitView constrainMinCoordinate:(CGFloat)proposedCoordinate ofSubviewAt:(int)index
+{
+	return proposedCoordinate + kMinOutlineViewSplit;
+}
+
+// -------------------------------------------------------------------------------
+//	splitView:constrainMaxCoordinate:
+// -------------------------------------------------------------------------------
+- (CGFloat)splitView:(NSSplitView *)splitView constrainMaxCoordinate:(CGFloat)proposedCoordinate ofSubviewAt:(int)index
+{
+	return proposedCoordinate - kMinOutlineViewSplit;
+}
+
+// -------------------------------------------------------------------------------
+//	splitView:resizeSubviewsWithOldSize:
+//
+//	Keep the left split pane from resizing as the user moves the divider line.
+// -------------------------------------------------------------------------------
+- (void)splitView:(NSSplitView*)sender resizeSubviewsWithOldSize:(NSSize)oldSize
+{
+	NSRect newFrame = [sender frame]; // get the new size of the whole splitView
+	NSView *left = [[sender subviews] objectAtIndex:0];
+	NSRect leftFrame = [left frame];
+	NSView *right = [[sender subviews] objectAtIndex:1];
+	NSRect rightFrame = [right frame];
+    
+	CGFloat dividerThickness = [sender dividerThickness];
+    
+	leftFrame.size.height = newFrame.size.height;
+    
+	rightFrame.size.width = newFrame.size.width - leftFrame.size.width - dividerThickness;
+	rightFrame.size.height = newFrame.size.height;
+	rightFrame.origin.x = leftFrame.size.width + dividerThickness;
+    
+	[left setFrame:leftFrame];
+	[right setFrame:rightFrame];
+}
+
 @end
+

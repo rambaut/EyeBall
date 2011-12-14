@@ -21,6 +21,7 @@
     [defaultValues setObject:[NSNumber numberWithBool:YES] forKey:EBEmptyDocumentKey];
     
     [[NSUserDefaults standardUserDefaults] registerDefaults:defaultValues];
+
 }
 
 + (BOOL)applicationShouldOpenUntitledFile:(NSApplication *)sender
