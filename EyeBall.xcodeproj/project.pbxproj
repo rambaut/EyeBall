@@ -7,10 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D0F71701498D8F600C1B21B /* SourceList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F716E1498D8F600C1B21B /* SourceList.xcdatamodeld */; };
 		4D494AB614975EEE007C08CD /* EBAlignmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D494AB514975EEE007C08CD /* EBAlignmentViewController.m */; };
 		4D6E5D181497859F00786670 /* SequencesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D6E5D161497859F00786670 /* SequencesView.xib */; };
 		4D6E5D1B149785A800786670 /* TaxaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D6E5D19149785A800786670 /* TaxaView.xib */; };
 		4D6E5D2214978FF900786670 /* EyeBall.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4D6E5D2114978FF900786670 /* EyeBall.icns */; };
+		4D6E5D5B1498D51D00786670 /* Alignment.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6E5D541498D51D00786670 /* Alignment.m */; };
+		4D6E5D5C1498D51D00786670 /* Locus.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6E5D561498D51D00786670 /* Locus.m */; };
+		4D6E5D5D1498D51D00786670 /* Sequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6E5D581498D51D00786670 /* Sequence.m */; };
+		4D6E5D5E1498D51D00786670 /* Taxon.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6E5D5A1498D51D00786670 /* Taxon.m */; };
+		4D6E5D611498D52800786670 /* NSArray_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6E5D601498D52800786670 /* NSArray_Extensions.m */; };
+		4D6E5D6C1498D54B00786670 /* BaseNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6E5D631498D54A00786670 /* BaseNode.m */; };
+		4D6E5D6D1498D54B00786670 /* ChildEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6E5D651498D54A00786670 /* ChildEditController.m */; };
+		4D6E5D6E1498D54B00786670 /* ChildNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6E5D671498D54A00786670 /* ChildNode.m */; };
+		4D6E5D6F1498D54B00786670 /* ImageAndTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6E5D691498D54A00786670 /* ImageAndTextCell.m */; };
+		4D6E5D701498D54B00786670 /* SeparatorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6E5D6B1498D54A00786670 /* SeparatorCell.m */; };
+		4D6E5D731498D59700786670 /* EBSourceListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6E5D721498D59700786670 /* EBSourceListController.m */; };
 		4D91B10814976B6F006BE06F /* EBOrganizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D91B10714976B6F006BE06F /* EBOrganizerViewController.m */; };
 		4D91B10B14976B95006BE06F /* OrganizerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D91B10914976B95006BE06F /* OrganizerView.xib */; };
 		4D91B11414976D34006BE06F /* LociView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D91B11214976D34006BE06F /* LociView.xib */; };
@@ -41,9 +53,6 @@
 		4DA72B861497588F005F7A67 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4DA72B841497588F005F7A67 /* Localizable.strings */; };
 		4DA72B8914975A10005F7A67 /* AlignmentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DA72B8714975A10005F7A67 /* AlignmentView.xib */; };
 		4DAB32B514975E310084FB3E /* ManagingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAB32B314975E310084FB3E /* ManagingViewController.m */; };
-		4DD094121498CB44000D9F17 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 4DD094111498CB44000D9F17 /* Data */; };
-		4DD094141498CBB1000D9F17 /* SourceList in Resources */ = {isa = PBXBuildFile; fileRef = 4DD094131498CBB1000D9F17 /* SourceList */; };
-		4DD094161498CBD0000D9F17 /* Utils in Resources */ = {isa = PBXBuildFile; fileRef = 4DD094151498CBCF000D9F17 /* Utils */; };
 		4DD74F6B14976E4900BB547B /* EBSequencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD74F6A14976E4900BB547B /* EBSequencesViewController.m */; };
 		4DD74F6E14976E6D00BB547B /* EBTaxaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD74F6D14976E6D00BB547B /* EBTaxaViewController.m */; };
 		4DD74F7114976E8A00BB547B /* EBLociViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD74F7014976E8A00BB547B /* EBLociViewController.m */; };
@@ -67,11 +76,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D0F716F1498D8F600C1B21B /* SourceList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SourceList.xcdatamodel; sourceTree = "<group>"; };
 		4D494AB414975EEE007C08CD /* EBAlignmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBAlignmentViewController.h; sourceTree = "<group>"; };
 		4D494AB514975EEE007C08CD /* EBAlignmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBAlignmentViewController.m; sourceTree = "<group>"; };
 		4D6E5D171497859F00786670 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SequencesView.xib; sourceTree = "<group>"; };
 		4D6E5D1A149785A800786670 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TaxaView.xib; sourceTree = "<group>"; };
 		4D6E5D2114978FF900786670 /* EyeBall.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = EyeBall.icns; sourceTree = "<group>"; };
+		4D6E5D531498D51D00786670 /* Alignment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alignment.h; sourceTree = "<group>"; };
+		4D6E5D541498D51D00786670 /* Alignment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alignment.m; sourceTree = "<group>"; };
+		4D6E5D551498D51D00786670 /* Locus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Locus.h; sourceTree = "<group>"; };
+		4D6E5D561498D51D00786670 /* Locus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Locus.m; sourceTree = "<group>"; };
+		4D6E5D571498D51D00786670 /* Sequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sequence.h; sourceTree = "<group>"; };
+		4D6E5D581498D51D00786670 /* Sequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sequence.m; sourceTree = "<group>"; };
+		4D6E5D591498D51D00786670 /* Taxon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Taxon.h; sourceTree = "<group>"; };
+		4D6E5D5A1498D51D00786670 /* Taxon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Taxon.m; sourceTree = "<group>"; };
+		4D6E5D5F1498D52800786670 /* NSArray_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSArray_Extensions.h; sourceTree = "<group>"; };
+		4D6E5D601498D52800786670 /* NSArray_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArray_Extensions.m; sourceTree = "<group>"; };
+		4D6E5D621498D54A00786670 /* BaseNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNode.h; sourceTree = "<group>"; };
+		4D6E5D631498D54A00786670 /* BaseNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNode.m; sourceTree = "<group>"; };
+		4D6E5D641498D54A00786670 /* ChildEditController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildEditController.h; sourceTree = "<group>"; };
+		4D6E5D651498D54A00786670 /* ChildEditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildEditController.m; sourceTree = "<group>"; };
+		4D6E5D661498D54A00786670 /* ChildNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildNode.h; sourceTree = "<group>"; };
+		4D6E5D671498D54A00786670 /* ChildNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildNode.m; sourceTree = "<group>"; };
+		4D6E5D681498D54A00786670 /* ImageAndTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageAndTextCell.h; sourceTree = "<group>"; };
+		4D6E5D691498D54A00786670 /* ImageAndTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageAndTextCell.m; sourceTree = "<group>"; };
+		4D6E5D6A1498D54A00786670 /* SeparatorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeparatorCell.h; sourceTree = "<group>"; };
+		4D6E5D6B1498D54A00786670 /* SeparatorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeparatorCell.m; sourceTree = "<group>"; };
+		4D6E5D711498D59700786670 /* EBSourceListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBSourceListController.h; sourceTree = "<group>"; };
+		4D6E5D721498D59700786670 /* EBSourceListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBSourceListController.m; sourceTree = "<group>"; };
 		4D91B10614976B6F006BE06F /* EBOrganizerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBOrganizerViewController.h; sourceTree = "<group>"; };
 		4D91B10714976B6F006BE06F /* EBOrganizerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBOrganizerViewController.m; sourceTree = "<group>"; };
 		4D91B10A14976B95006BE06F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/OrganizerView.xib; sourceTree = "<group>"; };
@@ -119,9 +151,6 @@
 		4DA72B8814975A10005F7A67 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AlignmentView.xib; sourceTree = "<group>"; };
 		4DAB32B214975E310084FB3E /* ManagingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagingViewController.h; sourceTree = "<group>"; };
 		4DAB32B314975E310084FB3E /* ManagingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagingViewController.m; sourceTree = "<group>"; };
-		4DD094111498CB44000D9F17 /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
-		4DD094131498CBB1000D9F17 /* SourceList */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SourceList; sourceTree = "<group>"; };
-		4DD094151498CBCF000D9F17 /* Utils */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Utils; sourceTree = "<group>"; };
 		4DD74F6914976E4900BB547B /* EBSequencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBSequencesViewController.h; sourceTree = "<group>"; };
 		4DD74F6A14976E4900BB547B /* EBSequencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBSequencesViewController.m; sourceTree = "<group>"; };
 		4DD74F6C14976E6D00BB547B /* EBTaxaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBTaxaViewController.h; sourceTree = "<group>"; };
@@ -162,6 +191,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D6E5D501498D4D800786670 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4D6E5D531498D51D00786670 /* Alignment.h */,
+				4D6E5D541498D51D00786670 /* Alignment.m */,
+				4D6E5D551498D51D00786670 /* Locus.h */,
+				4D6E5D561498D51D00786670 /* Locus.m */,
+				4D6E5D571498D51D00786670 /* Sequence.h */,
+				4D6E5D581498D51D00786670 /* Sequence.m */,
+				4D6E5D591498D51D00786670 /* Taxon.h */,
+				4D6E5D5A1498D51D00786670 /* Taxon.m */,
+				4DA72B341497566F005F7A67 /* EBDocument.xcdatamodeld */,
+				4D0F716E1498D8F600C1B21B /* SourceList.xcdatamodeld */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		4D6E5D511498D4DF00786670 /* SourceList */ = {
+			isa = PBXGroup;
+			children = (
+				4D6E5D621498D54A00786670 /* BaseNode.h */,
+				4D6E5D631498D54A00786670 /* BaseNode.m */,
+				4D6E5D641498D54A00786670 /* ChildEditController.h */,
+				4D6E5D651498D54A00786670 /* ChildEditController.m */,
+				4D6E5D661498D54A00786670 /* ChildNode.h */,
+				4D6E5D671498D54A00786670 /* ChildNode.m */,
+				4D6E5D681498D54A00786670 /* ImageAndTextCell.h */,
+				4D6E5D691498D54A00786670 /* ImageAndTextCell.m */,
+				4D6E5D6A1498D54A00786670 /* SeparatorCell.h */,
+				4D6E5D6B1498D54A00786670 /* SeparatorCell.m */,
+			);
+			name = SourceList;
+			sourceTree = "<group>";
+		};
+		4D6E5D521498D4EA00786670 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4D6E5D5F1498D52800786670 /* NSArray_Extensions.h */,
+				4D6E5D601498D52800786670 /* NSArray_Extensions.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		4DA72B0A1497566F005F7A67 = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +286,8 @@
 				4DA72B82149757F4005F7A67 /* AppController.m */,
 				4DA72B2B1497566F005F7A67 /* EBDocument.h */,
 				4DA72B2C1497566F005F7A67 /* EBDocument.m */,
+				4D6E5D711498D59700786670 /* EBSourceListController.h */,
+				4D6E5D721498D59700786670 /* EBSourceListController.m */,
 				4DA72B2E1497566F005F7A67 /* EBDocument.xib */,
 				4D494AB414975EEE007C08CD /* EBAlignmentViewController.h */,
 				4D494AB514975EEE007C08CD /* EBAlignmentViewController.m */,
@@ -236,10 +310,9 @@
 				4DA72B7E149757DE005F7A67 /* PreferenceController.m */,
 				4DA72B7714975764005F7A67 /* Preferences.xib */,
 				4DA72B311497566F005F7A67 /* MainMenu.xib */,
-				4DA72B341497566F005F7A67 /* EBDocument.xcdatamodeld */,
-				4DD094131498CBB1000D9F17 /* SourceList */,
-				4DD094111498CB44000D9F17 /* Data */,
-				4DD094151498CBCF000D9F17 /* Utils */,
+				4D6E5D501498D4D800786670 /* Data */,
+				4D6E5D511498D4DF00786670 /* SourceList */,
+				4D6E5D521498D4EA00786670 /* Utils */,
 				4DA72B201497566F005F7A67 /* Supporting Files */,
 			);
 			path = EyeBall;
@@ -404,9 +477,6 @@
 				4D6E5D181497859F00786670 /* SequencesView.xib in Resources */,
 				4D6E5D1B149785A800786670 /* TaxaView.xib in Resources */,
 				4D6E5D2214978FF900786670 /* EyeBall.icns in Resources */,
-				4DD094121498CB44000D9F17 /* Data in Resources */,
-				4DD094141498CBB1000D9F17 /* SourceList in Resources */,
-				4DD094161498CBD0000D9F17 /* Utils in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +530,18 @@
 				4DD74F6B14976E4900BB547B /* EBSequencesViewController.m in Sources */,
 				4DD74F6E14976E6D00BB547B /* EBTaxaViewController.m in Sources */,
 				4DD74F7114976E8A00BB547B /* EBLociViewController.m in Sources */,
+				4D6E5D5B1498D51D00786670 /* Alignment.m in Sources */,
+				4D6E5D5C1498D51D00786670 /* Locus.m in Sources */,
+				4D6E5D5D1498D51D00786670 /* Sequence.m in Sources */,
+				4D6E5D5E1498D51D00786670 /* Taxon.m in Sources */,
+				4D6E5D611498D52800786670 /* NSArray_Extensions.m in Sources */,
+				4D6E5D6C1498D54B00786670 /* BaseNode.m in Sources */,
+				4D6E5D6D1498D54B00786670 /* ChildEditController.m in Sources */,
+				4D6E5D6E1498D54B00786670 /* ChildNode.m in Sources */,
+				4D6E5D6F1498D54B00786670 /* ImageAndTextCell.m in Sources */,
+				4D6E5D701498D54B00786670 /* SeparatorCell.m in Sources */,
+				4D6E5D731498D59700786670 /* EBSourceListController.m in Sources */,
+				4D0F71701498D8F600C1B21B /* SourceList.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -773,6 +855,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		4D0F716E1498D8F600C1B21B /* SourceList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4D0F716F1498D8F600C1B21B /* SourceList.xcdatamodel */,
+			);
+			currentVersion = 4D0F716F1498D8F600C1B21B /* SourceList.xcdatamodel */;
+			path = SourceList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		4DA72B341497566F005F7A67 /* EBDocument.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (

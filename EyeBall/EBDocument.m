@@ -7,7 +7,7 @@
 //
 
 #import "EBDocument.h"
-#import "SourceListController.h"
+#import "SourceList/SourceListController.h"
 #import "EBAlignmentViewController.h"
 #import "EBLociViewController.h"
 #import "EBOrganizerViewController.h"
